@@ -6,7 +6,7 @@ class FavoriteIndex extends React.Component {
   }
 
   render() {
-      return (<div><a href="#">favorites</a></div>);
+      return (<div>favorites</div>);
     }
 }
 

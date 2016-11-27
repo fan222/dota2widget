@@ -8,19 +8,26 @@ class App extends React.Component {
      super(props);
      this.state = {
        class1: "active",
-       class2: "not-active"
+       class2: "not-active",
+       class3: "not-active"
      };
   }
 
   setclass1() {
   if (this.state.class1 === "not-active") {
-    this.setState({class1: "active",class2: "not-active"});
+    this.setState({class1: "active",class2: "not-active",class3: "not-active"});
   }
 }
 
 setclass2() {
   if (this.state.class2 === "not-active") {
-    this.setState({class2: "active", class1: "not-active"});
+    this.setState({class2: "active",class1: "not-active",class3: "not-active"});
+  }
+}
+
+setclass3() {
+  if (this.state.class3 === "not-active") {
+    this.setState({class3: "active",class1: "not-active",class2: "not-active"});
   }
 }
 
@@ -33,11 +40,12 @@ setclass2() {
             <h1 className="header-logo"><a href="#">Dota2 Widget</a></h1>
 
             <ul className="nav-ul clearfix">
-              <li className="nav-li" onClick={this.setclass1.bind(this)}><a href="#">Douyu Dota2</a></li>
-              <li className="nav-li" onClick={this.setclass2.bind(this)}><a href="#">Heros Wiki</a></li>
-              <li className="nav-li favorites">
-                <FavoritesIndexContainer />
-              </li>
+              <li className="nav-li" onClick={this.setclass1.bind(this)}>
+                <a href="#">Douyu Dota2</a></li>
+              <li className="nav-li" onClick={this.setclass2.bind(this)}>
+                <a href="#">Heros Wiki</a></li>
+              <li className="nav-li" onClick={this.setclass3.bind(this)}>
+                <a href="#">Favorites</a></li>
             </ul>
 
           </nav>
@@ -48,6 +56,9 @@ setclass2() {
         </div>
         <div className={this.state.class2}>
           <HerosIndexContainer />
+        </div>
+        <div className={this.state.class3}>
+          <FavoritesIndexContainer />
         </div>
       </div>
     );
