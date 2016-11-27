@@ -1,13 +1,11 @@
 import React from 'react';
 import { Provider } from 'react-redux';
+import App from './app';
 
-const Root = ({ store }) => {
-
-  return (
-    <Provider store={store}>
-      <h1>dota2widget</h1>
-    </Provider>
-  );
-};
+const Root = ({ store }) => (
+  <Provider store={store}>
+    <App />
+  </Provider>
+);
 
 export default Root;
