@@ -1,10 +1,12 @@
 import React from 'react';
-
+import { Provider } from 'react-redux';
 
 const Root = ({ store }) => {
 
   return (
-    <h1>dota2widget</h1>
+    <Provider store={store}>
+      <h1>dota2widget</h1>
+    </Provider>
   );
 };
 
