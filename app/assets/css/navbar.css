@@ -22,8 +22,10 @@ body {
 }
 
 .header-nav {
-  margin: 0 auto;
-  width: 900px;
+  padding: 0 10%;
+  width: 80%;
+  background-color: black;
+  position: fixed;
 }
 
 .header-logo {

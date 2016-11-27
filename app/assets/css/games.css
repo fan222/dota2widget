@@ -1,0 +1,60 @@
+.games-index{
+  padding-top: 39px;
+  color: white;
+}
+
+.item-avatar {
+  height: 30px;
+  width: 30px;
+}
+
+.item-src {
+  height: 180px;
+  width: 320px;
+}
+
+.games-ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.games-li {
+  padding: 20px;
+}
+
+.item-nickname {
+  float: left;
+  padding-top: 3px;
+}
+
+.item-avatar {
+  float: left;
+  padding-right: 5px;
+}
+
+.item-online, .item-fire {
+  float: right;
+}
+.item-online {
+  font-size: 12px;
+  padding-top: 7px;
+}
+
+.item-fire {
+  height: 25px;
+  width: 25px;
+}
+
+.item-url {
+  margin-left: 255px;
+  font-size: 13px;
+}
+
+.item-url:hover {
+  color: #f2b93e;
+}
+
+.item-roomname {
+  font-size: 14px;
+}
