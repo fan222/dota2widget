@@ -4,6 +4,8 @@ import ReactDOM from 'react-dom';
 import Root from './components/root';
 import configureStore from './store/store';
 import {addFavorite, deleteFavorite} from './actions/favorites_actions';
+import { fetchAllGamesRooms, fetchSingleGameRoom}
+        from './actions/games_actions';
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -25,4 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
   window.store = store;
   window.addFavorite = addFavorite;
   window.deleteFavorite = deleteFavorite;
+  window.fetchAllGamesRooms = fetchAllGamesRooms;
+  window.fetchSingleGameRoom = fetchSingleGameRoom;
 });

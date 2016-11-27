@@ -7,8 +7,9 @@ export const fetchAllGamesRooms = () => ({
   type: FETCH_ALL_GAMES_ROOMS
 });
 
-export const fetchSingleGameRoom = () => ({
-  type: FETCH_SINGLE_GAME_ROOM
+export const fetchSingleGameRoom = (id) => ({
+  type: FETCH_SINGLE_GAME_ROOM,
+  id: id
 });
 
 export const receiveAllGamesRooms = (rooms) => ({
