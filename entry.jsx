@@ -6,6 +6,8 @@ import configureStore from './store/store';
 import {addFavorite, deleteFavorite} from './actions/favorites_actions';
 import { fetchAllGamesRooms, fetchSingleGameRoom}
         from './actions/games_actions';
+import {fetchAllHerosData, fetchSingleHeroData,fetchAllHerosPairs}
+        from './actions/heros_actions';
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -29,4 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
   window.deleteFavorite = deleteFavorite;
   window.fetchAllGamesRooms = fetchAllGamesRooms;
   window.fetchSingleGameRoom = fetchSingleGameRoom;
+  window.fetchAllHerosData = fetchAllHerosData;
+  window.fetchSingleHeroData = fetchSingleHeroData;
+  window.fetchAllHerosPairs = fetchAllHerosPairs;
 });
