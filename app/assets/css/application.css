@@ -17,6 +17,10 @@ span, article, footer, time, small {
 }
 body {
   font-family: sans-serif;
+  background-image: url(http://res.cloudinary.com/cloudfan/image/upload/v1480278261/dota2_yyajrb.jpg);
+  background-repeat: no-repeat;
+
+  background-size: cover;
 }
 
 ul {
