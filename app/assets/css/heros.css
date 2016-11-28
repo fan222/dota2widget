@@ -5,7 +5,8 @@
 
 .heros-ul {
   width: 250px;
-  margin-left: 110px;
+  margin-left: 25%;
+  margin-bottom: 150px;
 }
 
 .heros-li {
@@ -14,12 +15,13 @@
 
 .heros-li:hover {
   cursor: pointer;
+  color: #f2b93e;
 }
 
 .heros-index-detail {
   width: 250px;
   position: fixed;
-  right: 0px;
+  right: 20%;
   top: 39px;
 }
 
