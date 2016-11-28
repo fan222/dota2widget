@@ -1,0 +1,29 @@
+.heros-index {
+  color: white;
+  padding-top: 34px;
+}
+
+.heros-ul {
+  width: 250px;
+  margin-left: 110px;
+}
+
+.heros-li {
+  padding: 5px 0;
+}
+
+.heros-li:hover {
+  cursor: pointer;
+}
+
+.heros-index-detail {
+  width: 250px;
+  position: fixed;
+  right: 0px;
+  top: 39px;
+}
+
+
+.heros-index-detail div {
+  padding: 5px 0;
+}

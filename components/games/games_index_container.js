@@ -9,7 +9,7 @@ const mapStateToProps = (state) => ({
 
 
 const mapDispatchToProps = (dispatch) => ({
-  fetchAllGamesRooms: () => dispatch(fetchAllGamesRooms()),
+  fetchAllGamesRooms: () => dispatch(fetchAllGamesRooms())
 });
 
 export default connect(
