@@ -1,0 +1,84 @@
+.favorites-index {
+  padding-top: 39px;
+  color: white;
+  font-size:
+}
+
+.favorites-avatar {
+  height: 45px;
+  width: 50px;
+  padding-right: 5px;
+}
+
+.favorites-favorite {
+  float: left;
+  color: red;
+  font-size: 20px;
+  padding-top: 8px;
+}
+
+.favorites-src {
+  width: 400px;
+  height: 240px;
+}
+
+.favorites-fire {
+  padding-top: 3px;
+  width: 30px;
+  height: 30px;
+}
+
+.favorites-avatar {
+  float: left;
+}
+
+.favorites-name {
+  float: left;
+  padding-top: 13px;
+  padding-right: 10px;
+}
+.favorites-online {
+  float: right;
+  padding-top: 13px;
+  font-size: 13px;
+}
+.favorites-fire {
+  float: right;
+}
+.weight, .status {
+  float: left;
+}
+
+.weight {
+  padding-right: 133px;
+}
+
+.fansnum {
+  float: right;
+}
+
+.favorites-index-item {
+  width: 400px;
+}
+
+.favorites-ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.favorites-subheader {
+  margin: 10px 0;
+  font-size: 14px;
+}
+.favorites-li {
+  padding: 20px;
+}
+.favorites-url {
+  margin-left: 329px;
+  font-size: 14px;
+}
+
+.favorites-url:hover {
+  color: #f2b93e;
+}

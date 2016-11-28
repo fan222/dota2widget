@@ -42,10 +42,10 @@ setclass3() {
             <ul className="nav-ul clearfix">
               <li className="nav-li" onClick={this.setclass1.bind(this)}>
                 <a href="#">Douyu Dota2</a></li>
-              <li className="nav-li" onClick={this.setclass2.bind(this)}>
-                <a href="#">Heros Wiki</a></li>
               <li className="nav-li" onClick={this.setclass3.bind(this)}>
                 <a href="#">Favorites</a></li>
+              <li className="nav-li" onClick={this.setclass2.bind(this)}>
+                <a href="#">Heros Wiki</a></li>
             </ul>
 
           </nav>
