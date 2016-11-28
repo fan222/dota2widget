@@ -17,6 +17,10 @@
   padding-top: 8px;
 }
 
+.favorites-favorite:hover {
+  cursor: pointer;
+}
+
 .favorites-src {
   width: 400px;
   height: 240px;

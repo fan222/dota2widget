@@ -35,6 +35,10 @@
   padding-left: 18px;
 }
 
+.item-favorite:hover {
+  cursor: pointer;
+}
+
 .item-avatar {
   float: left;
   padding-right: 5px;
