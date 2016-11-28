@@ -20,7 +20,9 @@ class GameIndex extends React.Component {
             <ul className="games-ul">
               {this.props.allRooms.map(room =>
                 <li className="games-li" key={room.room_id}>
-                  <GamesIndexItem room={room}/>
+                  <GamesIndexItem room={room} favorites={this.props.favorites}
+                                  addFavorite={this.props.addFavorite}
+                                  deleteFavorite={this.props.deleteFavorite}/>
                 </li>
                 )
               }
