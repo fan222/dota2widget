@@ -28,6 +28,13 @@
   padding-top: 3px;
 }
 
+.item-favorite{
+  float: left;
+  color: red;
+  font-size: 22px;
+  padding-left: 18px;
+}
+
 .item-avatar {
   float: left;
   padding-right: 5px;
