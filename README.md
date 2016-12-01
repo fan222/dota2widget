@@ -2,23 +2,53 @@
 
 data2widget is a new-tab chrome extension that allow dota2 users to quickly search and compare dota2 heroes. It also allows users to search and add favorites streams on Douyu, a popular Chinese live stream website. User will also receive alerts when they're live.
 
+![shot] [screenshot]
 
-# MVP
+[screenshot]: ./docs/ScreenShot
 
-- [ ] User can search and compare dota2 heros.
-- [ ] User can search streams based on streams type, id and names.
-- [ ] User can add favorites and receives alerts from streams.
+## Features
 
-# Implementation Timeline
+* Check online Douyu Dota2 streams.
+  * current viewer number
+  * streams names
+  * room owner's name
+  * link to original website, Douyu
+* Add favorite streams.
+  * current status, online / offline
+  * room owner's weight
+  * number of follows
+* Check Dota2 heroes attributes
+  * base strength
+  * strength gain
+  * etc..
 
-**Day 1:** Learn building chrome extension tutorials.
+## Api Calls
 
-**Day 2:** Research heroes stats and douyu streams apis.
+* This app users public apis from Douyu for game streams and JankDota Hero Stats API form heroes attributes.
 
-**Day 3:** Build app skeleton. Implement heroes stats.
+### fetch streams informations
+```javascript
+export const fetchAllGamesRooms = (success) => {
+  $.ajax({
+    method: "GET",
+    url: "http://open.douyucdn.cn/api/RoomApi/live/dota2",
+    data: {limit: 66},
+    success
+  });
+};
+```
+### fetch heroes attributes.
+```javascript
+export const fetchAllHerosData = (success) => {
+  $.ajax({
+    method: "GET",
+    url: "http://api.herostats.io/heroes/all",
+    success
+  });
+};
+```
 
-**Day 4:** Implement douyu streams search.
+## TODOS
 
-**Day 5:** Implement douyu favorites and alerts.
-
-**Day 6:** Style and readme.
+- [ ] Integrate more game streams website's apis.
+- [ ] Add alerts feature, so that users get noticed when their favorite streams are online.
