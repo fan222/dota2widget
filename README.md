@@ -48,6 +48,24 @@ export const fetchAllHerosData = (success) => {
 };
 ```
 
+## Favorites Implementation
+
+When an array is saved to localStorage, chrome will transfer the array to string before it's saved. So each time the extension is loaded, the informations store in localStorage is parsed into array of integers.
+```javascript
+  let ids = localStorage.getItem('favorites').split(",");
+  let numIds = ids.map(id => parseInt(id));
+  preloadedState = {favorites: {ids: numIds}};
+```
+
+Each time user add one stream to favorites, the stream id is always parsed to integer as well.
+
+```javascript
+  newIds = state.ids;
+  newIds.push(parseInt(action.id));
+  localStorage['favorites'] = newIds;
+  return merge({}, state, {ids: newIds});
+```
+
 ## TODOS
 
 - [ ] Integrate more game streams website's apis.
