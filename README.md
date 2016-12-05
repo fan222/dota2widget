@@ -4,7 +4,7 @@ data2widget is a new-tab chrome extension that allow dota2 users to quickly sear
 
 ![shot] [screenshot]
 
-[screenshot]: ./docs/screenshot.png
+[screenshot]: ./docs/screen.png
 
 ## Features
 
